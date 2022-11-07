@@ -13,7 +13,7 @@ The Nether Regions plugin is running on the [bingecraft.net Minecraft server](ht
 ## installation
 
 ```
-git clone git@github.com:arctair/nether-regions.git
+git clone git@github.com:bingecraft-net/nether-regions.git
 cd nether-regions
 mvn clean package
 ```
