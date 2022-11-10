@@ -9,5 +9,8 @@ public final class Plugin extends JavaPlugin {
     FileConfiguration config = getConfig();
     config.options().copyDefaults(true);
     saveConfig();
+
+    PlayerPortalOverride playerPortalOverride = new PlayerPortalOverride(getServer());
+    getServer().getPluginManager().registerEvents(playerPortalOverride, this);
   }
 }

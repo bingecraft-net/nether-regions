@@ -2,3 +2,4 @@ name: nether-regions
 version: '${project.version}'
 main: net.bingecraft.nether_regions.Plugin
 api-version: 1.19
+depend: [ 'Multiverse-Core' ]
