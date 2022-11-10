@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ ! -d test-server ] ; then
+  mkdir test-server
+  cd test-server
+  curl -sLO https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/265/downloads/paper-1.19.2-265.jar
+  mkdir plugins
+  cd ..
+fi
+
+rm test-server/plugins/nether-regions-*.jar
+mvn clean package
+cp target/nether-regions-*.jar test-server/plugins/
+cd test-server
+java -Xms512M -Xmx4096M -jar paper-*.jar nogui
