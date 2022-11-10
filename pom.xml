@@ -17,7 +17,7 @@
     </properties>
 
     <build>
-        <finalName>nether-regions-${version}</finalName>
+        <finalName>nether-regions-${project.version}</finalName>
         <plugins>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
